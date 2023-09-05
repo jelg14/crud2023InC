@@ -1,0 +1,10 @@
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.csproj.AssemblyReference.cache
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.AgregarAlumno.resources
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.BuscarAlumno.resources
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.EditarAlumno.resources
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.Form1.resources
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.csproj.GenerateResource.cache
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.AssemblyInfoInputs.cache
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.AssemblyInfo.cs
+C:\temp\Progra II A\CRUD2023\CRUD2023\obj\Debug\netcoreapp3.0\CRUD2023.csproj.CoreCompileInputs.cache
