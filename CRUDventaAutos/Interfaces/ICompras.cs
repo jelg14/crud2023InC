@@ -13,8 +13,5 @@ namespace CRUDventaAutos.Interfaces
     {
        public DataSet GetCompra(int id);
         public DataSet GetAllCompras();
-        public void SaveCompra(Compra compra);
-        public void DeleteCompra(int id);
-        public void UpdateCompra(Compra compra);
     }
 }

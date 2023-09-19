@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JLJ\\Desktop\\Jose\\CRUDventaAutos\\CRUDventaAutos.csproj": {}
+    "C:\\Users\\Public\\Documents\\José\\Programacion\\crud2023InC-main\\CRUDventaAutos\\CRUDventaAutos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JLJ\\Desktop\\Jose\\CRUDventaAutos\\CRUDventaAutos.csproj": {
+    "C:\\Users\\Public\\Documents\\José\\Programacion\\crud2023InC-main\\CRUDventaAutos\\CRUDventaAutos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JLJ\\Desktop\\Jose\\CRUDventaAutos\\CRUDventaAutos.csproj",
+        "projectUniqueName": "C:\\Users\\Public\\Documents\\José\\Programacion\\crud2023InC-main\\CRUDventaAutos\\CRUDventaAutos.csproj",
         "projectName": "CRUDventaAutos",
-        "projectPath": "C:\\Users\\JLJ\\Desktop\\Jose\\CRUDventaAutos\\CRUDventaAutos.csproj",
-        "packagesPath": "C:\\Users\\JLJ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JLJ\\Desktop\\Jose\\CRUDventaAutos\\obj\\",
+        "projectPath": "C:\\Users\\Public\\Documents\\José\\Programacion\\crud2023InC-main\\CRUDventaAutos\\CRUDventaAutos.csproj",
+        "packagesPath": "C:\\Users\\Leand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Public\\Documents\\José\\Programacion\\crud2023InC-main\\CRUDventaAutos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\JLJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -10,7 +10,7 @@ namespace CRUDventaAutos.Interfaces
 {
     internal interface IProveedores
     {
-        public Proveedor GetProveedor(int id);
+        public DataSet GetProveedor(int id);
         public DataSet GetAllProveedores();
     }
 }

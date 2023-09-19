@@ -10,7 +10,7 @@ namespace CRUDventaAutos.Interfaces
 {
     internal interface IClientes
     {
-        public Cliente getCliente(int id);
+        public DataSet getCliente(int id);
         public DataSet GetAllClientes();
 
     }

@@ -3,6 +3,7 @@ using CRUDventaAutos.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace CRUDventaAutos.Utils
 {
     internal class OperacionesVenta : IVentas
     {
-        string strConn = @"Server=localhost;Database=PRUEBA_COPEREX;Trusted_Connection=true"; //agregar /SQLEXPRESS si se utiliza sql server express
+        string strConn = @"Server=localhost\SQLEXPRESS;DataBase=CRUDautos;Trusted_Connection=true"; //agregar /SQLEXPRESS a la par de localhost si se utiliza sql server express
         public void DeleteVenta(int id)
         {
             try
@@ -89,11 +90,11 @@ namespace CRUDventaAutos.Utils
                     conn.ConnectionString = strConn;
                     conn.Open();
                     SqlCommand insertCommand = new SqlCommand("UPDATE Ventas SET " +
-                        "fechaVenta = @fechaVenta, id_Auto=@id_Auto, id_Cliente = @id_Cliente, totalDeVenta=@totalDeVenta "+
+                        "fechaVenta = @fechaVenta, idAutoVendido=@idAutoVendido, idCliente = @idCliente, totalDeVenta=@totalDeVenta " +
                         "WHERE id_Venta = "+ id, conn);
                     insertCommand.Parameters.Add(new SqlParameter("fechaVenta", venta.fechaVenta));
-                    insertCommand.Parameters.Add(new SqlParameter("id_Auto", venta.id_Auto));
-                    insertCommand.Parameters.Add(new SqlParameter("id_Cliente", venta.id_Cliente));
+                    insertCommand.Parameters.Add(new SqlParameter("idAutoVendido", venta.id_Auto));
+                    insertCommand.Parameters.Add(new SqlParameter("idCliente", venta.id_Cliente));
                     insertCommand.Parameters.Add(new SqlParameter("totalDeVenta", venta.TotalDeVenta));
                     insertCommand.ExecuteNonQuery();
                     Form1 fPrincipal = new Form1();
@@ -133,5 +134,37 @@ namespace CRUDventaAutos.Utils
             }
         }
 
+        internal string BuscarImagen(int id)
+        {
+            try
+            {
+                string nombre;
+                using (SqlConnection conn = new SqlConnection())
+                {
+                    conn.ConnectionString = strConn;
+                    conn.Open();
+                    var select = "SELECT nombre FROM Imagenes WHERE idImagen = " + id;
+                    var comando = new SqlCommand(select, conn);
+                    
+                    nombre = comando.ExecuteScalar().ToString();
+                    conn.Close();
+                    return nombre;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void deleteVenta(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void updateVenta(Venta venta, int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

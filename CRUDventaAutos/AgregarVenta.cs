@@ -58,8 +58,8 @@ namespace CRUDventaAutos
             {
                 idVenta = Convert.ToInt16(fila["id_Venta"]);
                 dtmFechaVenta.Value = Convert.ToDateTime(fila["fechaVenta"]);
-                txtIDauto.Text = fila["id_Auto"].ToString();
-                txtIDcliente.Text = fila["id_Cliente"].ToString();
+                txtIDauto.Text = fila["idAutoVendido"].ToString();
+                txtIDcliente.Text = fila["idCliente"].ToString();
                 txtTotal.Text = fila["totalDeVenta"].ToString();
             }
         }
@@ -69,7 +69,6 @@ namespace CRUDventaAutos
             OperacionesVenta ov = new OperacionesVenta();
             Venta venta = new Venta
             {
-
                 fechaVenta = dtmFechaVenta.Value,
                 id_Auto = Convert.ToInt32(txtIDauto.Text),
                 id_Cliente = Convert.ToInt32(txtIDcliente.Text),
@@ -84,6 +83,18 @@ namespace CRUDventaAutos
             OperacionesVenta ov = new OperacionesVenta();
             ov.DeleteVenta(int.Parse(txtIDVenta.Text));
             LimpiarFormulario();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Random ran = new Random();
+            OperacionesVenta ov = new OperacionesVenta();
+
+            int id = ran.Next(3, 6);
+
+            string archivo = ov.BuscarImagen(id);
+            pictureBox1.ImageLocation = "C:\\Users\\Public\\Downloads\\" + archivo;
+
         }
     }
 }

@@ -11,9 +11,9 @@ namespace CRUDventaAutos.Interfaces
     internal interface IAutos
     {
         public DataSet GetAuto(int id);
-        public DataSet  GetAllAutos(int id);
-        public void saveAuto(Auto auto);
+        public DataSet GetAllAutos();
+        public void SaveAuto(Auto auto);
         public void deleteAuto(int id);
-        public void updateAuto(Auto auto);
+        public void updateAuto(Auto auto, int id);
     }
 }
